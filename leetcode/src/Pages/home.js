@@ -29,7 +29,7 @@ class Home extends React.Component {
 
     fetchLeetcodeList() {
         console.log('Fetching...');
-        fetch('http://127.0.0.1:8000/codes/')
+        fetch('http://127.0.0.1:8000/api/codes/')
             .then(response => response.json())
             .then(data2 =>
                 this.setState({
@@ -40,7 +40,7 @@ class Home extends React.Component {
 
     fetchQuestion() {
         console.log('Fetching...');
-        fetch('http://127.0.0.1:8000/question/')
+        fetch('http://127.0.0.1:8000/api/question/')
             .then(response => response.json())
             .then(data =>
                 // console.log(data)

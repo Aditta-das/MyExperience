@@ -48,10 +48,10 @@ class QuestionForm extends React.Component {
 
 
     handleSubmit(e) {
-        e.preventDefault()
+        e.preventDefault();
         console.log(this.state.activeItem)
         var csrftoken = this.getCookie('csrftoken')
-        var url = "http://127.0.0.1:8000/question/"
+        var url = "http://127.0.0.1:8000/api/question/"
         fetch(url, {
             method: 'post',
             headers: {
